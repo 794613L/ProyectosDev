@@ -1,0 +1,400 @@
+:root{
+  --fuenteHeading: 'PT Sans', sans-serif;
+  --fuenteParrafos: 'Open Sans' sans-serif;
+
+  --primario: #784d3c;
+  --gris: #e1e1e1;
+  --blanco: #fff;
+  --negro:  #000;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,*:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Globales */
+
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilidades */
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+/* Header */
+.webp .header{
+  background-image: url(/img/banner.webp);
+}
+.no-webp .header{
+  background-image: url(/img/banner.jpg);    
+}
+.header{
+  background-image: url(/img/banner.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__texto{
+  text-align: center;
+  color: var(--blanco);
+  margin: 5rem;
+}
+
+@media (min-width:768px) {
+  .header__texto{
+    margin-top: 15rem;
+  }
+}
+
+.barra{
+  padding-top: 4rem;
+}
+
+@media (min-width:768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo{
+  color: var(--blanco);
+}
+
+.logo__nombre{
+  font-weight: 400;
+}
+
+.logo__bold{
+  font-weight: 700;
+}
+
+@media (min-width:768px) {
+  .navegacion{
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.navegacion__enlace{
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+}
+
+@media (min-width:768px) {
+  .contenido-principal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
+}
+
+.entrada {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+  
+} 
+
+.entrada:last-of-type {
+  border: none;
+  border-bottom: 0;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+.button {
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  text-align: center;
+  font-weight: 700;
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 1rem 3rem;
+  background: var(--bg);
+  transition: 0.2s;
+  margin-bottom: 2rem
+}
+
+@media (min-width:768px) {
+  .button{
+    display: inline-block;
+  }
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.button--secundario {
+  background: var(--primario); /* Color fijo */
+  color: #fff; /* Color del texto */
+  text-align: center;
+  font-weight: 700;
+  display: block;
+  font-family: var(--fuenteHeading);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .button--secundario {
+    display: inline-block;
+  }
+}
+
+.cursos {
+  list-style: none;
+}
+
+.widget-curso {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+.widget-curso:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+.widget-curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+}
+.widget-curso__info {
+  font-weight: normal;
+}
+
+.widget-curso__label,
+.widget-curso__info{
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: var(--negro);
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+} 
+
+/* Sobre Nosotros */
+@media (min-width:768px) {
+  .sobre-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+/* /Sobre Nosotros - Imagen */
+.sobre-nosotros__imagen {
+  overflow: hidden;
+  border-radius: 15px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.sobre-nosotros__imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Transición suave para la imagen */
+}
+
+.sobre-nosotros__imagen:hover img {
+  transform: scale(1.05); /* Aumenta ligeramente la imagen al hacer hover */
+}
+
+/* Cursos */
+.curso {
+  padding: 3rem 1.5rem;
+  border-bottom: 1px solid var(--gris);
+  border-radius: 8px; /* Bordes redondeados */
+  background: #f9f9f9; /* Fondo sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+  margin-bottom: 2rem; /* Espacio entre cursos */
+}
+
+.curso:hover {
+  transform: translateY(-5px); /* Elevación al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
+}
+
+@media (min-width: 768px) {
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+
+.curso:last-of-type {
+  border: none;
+}
+
+.curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+  color: var(--colorPrimario); /* Color destacado */
+  margin-bottom: 0.5rem; /* Espaciado debajo del título */
+}
+
+.curso__info {
+  font-weight: normal;
+  color: var(--grisClaro); /* Color más suave para la información */
+}
+
+.curso__label,
+.curso__info {
+  font-size: 1.8rem; /* Tamaño de fuente ligeramente ajustado */
+}
+
+/* Agregar un estilo adicional para pequeñas pantallas */
+@media (max-width: 767px) {
+  .curso {
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+/* Contacto */
+
+/* Estilo para la sección de contacto */
+.contacto-bg {
+  background-image: url(/img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del formulario */
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 90%;
+  max-width: 800px; /* Limitar el ancho máximo para grandes pantallas */
+  padding: 3rem; /* Ajustar padding para mejor presentación */
+  border-radius: 8px; /* Bordes redondeados para un estilo moderno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+/* Estilo para los campos del formulario */
+.campo {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los campos se ajusten en pantallas pequeñas */
+  margin-bottom: 1.5rem; /* Reducir el margen inferior */
+}
+
+/* Estilo para la etiqueta del campo */
+.campo__label {
+  flex: 0 0 100%; /* Asegura que la etiqueta ocupe toda la fila en pantallas pequeñas */
+  text-align: left; /* Alinear a la izquierda en lugar de derecha */
+  padding-bottom: 0.5rem; /* Espacio entre etiqueta y campo */
+  font-weight: bold; /* Negrita para mejorar la legibilidad */
+}
+
+/* Estilo para el campo del formulario */
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--gris);
+  border-radius: 4px; /* Bordes redondeados para los campos */
+  padding: 0.75rem; /* Espacio interno para mayor confort */
+  font-size: 1rem; /* Tamaño de fuente consistente */
+}
+
+/* Estilo especial para el campo de texto área */
+.campo__field--textarea {
+  height: 15rem; /* Ajustar la altura para mejorar la visibilidad */
+  resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .formulario {
+    width: 95%; /* Mayor ancho en pantallas pequeñas */
+    padding: 2rem; /* Menor padding en pantallas pequeñas */
+  }
+
+  .campo {
+    flex-direction: column; /* Colocar etiquetas y campos uno debajo del otro */
+  }
+
+  .campo__label {
+    text-align: left; /* Alinear etiqueta a la izquierda en pantallas pequeñas */
+    padding-right: 0; /* Eliminar padding derecho en pantallas pequeñas */
+  }
+
+  .campo__field {
+    width: 100%; /* Asegurar que el campo use el 100% del ancho disponible */
+  }
+}
+
+
+
+
+

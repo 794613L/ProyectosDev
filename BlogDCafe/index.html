@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogDeCafé</title>
+  <meta name="description" content="Página web de BlogDeCafé">
+
+  <!-- prefetch -->
+  <link rel="prefetch" href="nosotros.html" as="document">
+
+  <!-- preload -->
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=PT+Sans:wght@400;700&display=swap"
+    crossorigin="crossorigin" as="font">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafè</span></h1>
+        </a>
+
+        <nav class="navegacion">
+          <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+          <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+          <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="header__texto">
+      <h2 class="no-margin">Blog de Cafè con consejos y cursos</h2>
+      <p class="no-margin">"Cada taza de café cuenta una historia; descubre la tuya en cada sorbo."</p>
+    </div>
+  </header>
+
+  <div class="contenedor contenido-principal">
+    <main class="blog">
+      <h3>Nuestros Blog</h3>
+
+      <article class="entrada">
+        <div class="entrada__imagen">
+          <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+        </div>
+
+        <div class="entrada__contenido">
+          <h4 class="no-margin">Tipos de Granos de Café</h4>
+          <p>Los granos de café se dividen en tres categorías principales: Arábica, Robusta, y Liberica. Los granos de
+            Arábica son conocidos por su sabor suave y complejo, con notas florales y frutales, mientras que los Robusta
+            tienen un perfil más fuerte y amargo, con más cafeína y un toque terroso. Liberica, menos comunes, ofrecen
+            un sabor único con notas afrutadas y florales. Cada tipo de grano aporta características distintas que
+            enriquecen la experiencia del café.</p>
+          <a href="entrada.html" class="button">LEER ENTRADA</a>
+        </div>
+      </article>
+
+      <article class="entrada">
+        <div class="entrada__imagen">
+          <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+        </div>
+
+        <div class="entrada__contenido">
+          <h4 class="no-margin">Deliciosas Recetas de Café</h4>
+          <p>Disfruta de una deliciosa taza de café mocha, una perfecta combinación de espresso, cacao en
+            polvo y leche. Para prepararlo, mezcla el cacao con azúcar y un poco de agua caliente para formar una pasta
+            rica y suave. Luego, calienta la leche y mézclala con la pasta de cacao. Vierte el espresso en una taza y
+            añade la mezcla de cacao y leche. Para un toque extra de indulgencia, decora con crema batida y sirop de
+            chocolate. Este café mocha es ideal para quienes buscan un sabor chocolatoso y cremoso en cada sorbo.</p>
+          <a href="entrada.html" class="button">LEER ENTRADA</a>
+        </div>
+      </article>
+
+      <article class="entrada">
+        <div class="entrada__imagen">
+          <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+        </div>
+
+        <div class="entrada__contenido">
+          <h4 class="no-margin">Beneficios del Café</h4>
+          <p>El café no solo es una bebida deliciosa, sino que también ofrece múltiples beneficios para la salud. Entre
+            ellos, destaca su capacidad para mejorar la energía y la concentración gracias a la cafeína, que también
+            puede aumentar el rendimiento físico. Además, el café es una rica fuente de antioxidantes, que ayudan a
+            combatir el daño celular y reducir el riesgo de enfermedades crónicas. También puede promover la salud
+            mental y digestiva, haciendo de él una opción saludable y estimulante.</p>
+          <a href="entrada.html" class="button">LEER ENTRADA</a>
+        </div>
+      </article>
+
+    </main>
+    <aside class="sidebar">
+      <h3>Nuestros Cursos y Talleres</h3>
+
+      <ul class="cursos no-padding">
+        <li class="widget-curso">
+          <h4 class="no-margin">Técnicas de Extracción de Café</h4>
+          <p class="widget-curso__label">Precio:
+            <span class="widget-curso__info">Gratis</span>
+          </p>
+          <p class="widget-curso__label">Cupo:
+            <span class="widget-curso__info">20</span>
+          </p>
+          <a href="entrada.html" class="button--secundario">MÁS INFORMACIÓN SOBRE NUESTROS CURSOS</a>
+        </li>
+
+        <li class="widget-curso">
+          <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+          <p class="widget-curso__label">Precio:
+            <span class="widget-curso__info">Gratis</span>
+          </p>
+          <p class="widget-curso__label">Cupo:
+            <span class="widget-curso__info">20</span>
+          </p>
+          <a href="entrada.html" class="button--secundario">MÁS INFORMACIÓN SOBRE NUESTROS CURSOS</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafè</span></h1>
+        </a>
+
+        <nav class="navegacion">
+          <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+          <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+          <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/modernizr.js"></script>
+</body>
+
+</html>
